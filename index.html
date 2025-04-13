@@ -2465,7 +2465,7 @@ function loadTabs() {
         }
 
         function addTab(title, content = '', id = null) {
-    const defaultText = "--[[\n    Made by Salad\n    discord.gg/getsalad\n ]]";    
+    const defaultText = "--[[\n    Made by nikoleto scripts\n    discord.gg/PnRGjDztBu\n ]]";    
     if (!content) {
         content = defaultText;
     }
@@ -2528,7 +2528,7 @@ function switchTab(tabId) {
             }
         }
         
-        const contentToSet = tab.content.trim() === '' ? "--[[ Made by Salad\n    discord.gg/getsalad\n ]]" : tab.content;        editor.setValue(contentToSet);
+        const contentToSet = tab.content.trim() === '' ? "--[[\n    Made by nikoleto scripts\n    discord.gg/PnRGjDztBu\n ]]" : tab.content;        editor.setValue(contentToSet);
         tab.element.classList.add('active');
         currentTab = tabId;
     }
@@ -2581,7 +2581,7 @@ function setupAutosave() {
 				base: 'vs-dark',
 				inherit: true,
 				colors: {
-					"editor.background": '#141414', //ur background color
+					"editor.background": '#040404', //ur background color
 				},
 				rules: [{
 						token: 'global',
@@ -2826,6 +2826,8 @@ function setupAutosave() {
 
 			}
 			load();
+      var ns = GetText();
+      SetText("--[[\n    Made by nikoleto scripts\n    discord.gg/PnRGjDztBu\n ]]")
 			Refresh = function () {
 				var text = GetText();
 				SetText("");
